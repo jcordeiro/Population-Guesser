@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 	getXMLCountryData();
 	
-	$('#start-buttson').on('click', startGame);
+	$('#start-button').on('click', startGame);
 	
 	// Listen for keyboard input
 	// The user can start the game by pressing the enter key
@@ -32,7 +32,7 @@ $(document).ready(function() {
 function getXMLCountryData() {
 
 	$.ajax({
-		url: 'countryData.xml',
+		url: 'CountryData.xml',
 		dataType: 'xml',
 		success: function(data) {
 			country_data = $(data).find('Records').find('Record');
