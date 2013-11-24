@@ -1,0 +1,217 @@
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	background: url('img/square_bg.png');
+  font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	margin: 0 0 80px; /* bottom = footer height */
+}
+
+#header {
+  font-weight: 300;
+	margin: 2em auto;
+	text-align: center;
+	width: 80%;
+}
+
+#header a {
+	color: black;
+	text-decoration: none;
+}
+
+#header h1 {
+	border-bottom: 1px solid black;
+	font-size: 4em;
+	font-weight: 300;
+	margin: auto;
+	width: 75%;	
+}
+@media (max-width: 900px) {
+  #header h1 {
+    font-size: 3em;
+  }
+}
+
+#content {
+	display: block;
+	margin: auto;
+	min-width: 280px;
+	padding: 0.25em;
+	text-align: center;
+	width: 80%;
+}
+
+.country {
+	display: inline-block;
+	text-align: center;
+	width: 25em;}
+@media (max-width: 1100px) {
+  .country {
+    width: 20em;
+  }
+}
+@media (max-width: 900px) {
+  .country {
+    width: 15em;
+  }
+}
+
+.country-name {
+	display: inline-block;
+	font-size: 2em;
+	line-height: 86px;
+	max-height: 86px;
+	min-height: 86px;
+	white-space: nowrap;
+}
+
+.country-population {
+	font-size: 1.5em;
+}
+
+.flag {
+	border: 1px solid black;	
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -webkit-border-radius: 5px;
+	border-radius: 5px;
+	display:block;
+	height: 125px;
+	margin: 1em auto;
+	max-width: 100%;
+	width: 250px;
+}
+
+.country-choice:hover {
+	-moz-box-shadow: 0 0 1em #000;
+	-webkit-box-shadow: 0 0 1em #000;
+	box-shadow: 0 0 1em #000;
+  cursor: pointer;
+}
+
+.shadow {
+  -moz-box-shadow: 0 0 1em #000;
+  -webkit-box-shadow: 0 0 1em #000;
+  box-shadow: 0 0 1em #000;
+}
+
+.correct {
+ border-bottom: 1px solid #28a823;
+ color: #28a823;
+}
+
+.wrong {
+  border-bottom: 1px solid red;
+	color: red;
+}
+
+#result {
+	margin: auto;
+	text-align: center;
+	width: 80%;
+}
+
+#result .hidden {
+	display: none;
+}
+
+#start-button {
+	display: block;
+	margin: 2em auto;
+	width: 20%;
+}
+
+#start-button:hover {
+	cursor: pointer;
+}
+
+#start-button {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  outline: none;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#start-button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+#score {
+  display: block;
+	font-size: 200%;
+	margin: 1.5em auto;
+}
+
+#footer {
+	bottom: 0;
+	height: 4em;
+	line-height: 4em;
+	margin: auto;
+	text-align: center;
+	width: 80%;
+}
+
+#footer a {
+	color: #097dca;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  border: none;
+}
+
+.hover-link {
+  border-bottom: 1px dotted #4d4d4d;
+}
+
+
+#footer-logo {
+	background: url("/img/WorldBankLogoGray.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	border-bottom: none;
+	display: inline-block;
+	height: 55px;
+	margin: 5px;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+	transition:all 1s;
+	vertical-align: middle;
+	width: 230px;
+}
+
+#footer-logo:hover {
+	background: url("/img/WorldBankLogoColored.png");
+	transition:all 1s;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+
+#footer {
+	bottom: 0;
+	height: 80px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
