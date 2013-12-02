@@ -56,10 +56,8 @@ function buildCountryObjects(country_data) {
 	random_right = Math.round(Math.random() * length);
 
 	// Ensure that the 2 random numbers are unique
-	if (random_right === random_left) {
-		while(random_right === random_left) {
-			random_right = Math.round(Math.random() * length);
-		}
+	while(random_right === random_left) {
+	  random_right = Math.round(Math.random() * length);
 	}
 	
 	var random_row_left = $(country_data[random_left]).find('Row');
